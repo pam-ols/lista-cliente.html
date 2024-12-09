@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #CDCAE3;
+      color: #1a1919;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 28px;
+      color: #564B8F;
+      font-weight: 900;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    table.clientes {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    table.clientes thead th {
+      background-color: #6458af;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      border: 2px solid #4A4A4A;
+    }
+
+    table.clientes tbody td {
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+      border: 1px solid #ddd;
+    }
+
+    table.clientes tbody tr:nth-child(even) {
+      background-color: #EDEAF6;
+    }
+
+    table.clientes tbody tr:hover {
+      background-color: #C6C4DD;
+    }
+
+    /* Estilo geral para os botões */
+    .btn {
+      padding: 5px 10px; /* Tamanho original do botão */
+      font-size: 0.8rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      width: auto;
+    }
+
+    /* Botão Excluir (mantendo a cor original) */
+    .btn-excluir {
+      background-color: #DC3545; /* Cor original do botão Excluir */
+      color: white;
+    }
+
+    .btn-excluir:hover {
+      transform: scale(1.03);
+      background-color: #C82333; /* Cor mais escura para o efeito hover */
+    }
+
+    .btn-excluir:active {
+      transform: scale(0.95);
+      box-shadow: rgba(133, 189, 215, 0.6) 0px 10px 10px -5px;
+    }
+
+    /* Botão Editar (modificado para manter o tamanho igual e cor Keppel) */
+    .btn-editar {
+      background-color: #00BFAD; /* Keppel */
+      color: white;
+    }
+
+    .btn-editar:hover {
+      background-color: #009F8A; /* Cor mais escura para o efeito hover */
+    }
+
+    .btn-editar:active {
+      transform: scale(0.95);
+      box-shadow: rgba(133, 189, 215, 0.6) 0px 10px 10px -5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Clientes</h1>
+  <table class="clientes">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+        <th>Endereço</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>João Silva</td><td>11987654321</td><td>joao.silva@example.com</td><td>Rua das Flores, 123</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>2</td><td>Maria Oliveira</td><td>21987654321</td><td>maria.oliveira@example.com</td><td>Avenida Brasil, 456</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>3</td><td>Carlos Santos</td><td>31987654321</td><td>carlos.santos@example.com</td><td>Rua do Campo, 789</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>4</td><td>Ana Costa</td><td>41987654321</td><td>ana.costa@example.com</td><td>Rua das Palmeiras, 101</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>5</td><td>Lucas Pereira</td><td>51987654321</td><td>lucas.pereira@example.com</td><td>Avenida Paulista, 202</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>6</td><td>Sofia Almeida</td><td>61987654321</td><td>sofia.almeida@example.com</td><td>Rua das Rosas, 303</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>7</td><td>Pedro Martins</td><td>71987654321</td><td>pedro.martins@example.com</td><td>Rua dos Lírios, 404</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>8</td><td>Beatriz Lopes</td><td>81987654321</td><td>beatriz.lopes@example.com</td><td>Rua das Hortênsias, 505</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>9</td><td>Gabriel Souza</td><td>91987654321</td><td>gabriel.souza@example.com</td><td>Avenida Central, 606</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>10</td><td>Larissa Ribeiro</td><td>10198765432</td><td>larissa.ribeiro@example.com</td><td>Rua das Magnólias, 707</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>11</td><td>Fernanda Lima</td><td>11198765432</td><td>fernanda.lima@example.com</td><td>Rua do Sol, 808</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>12</td><td>Rafael Ferreira</td><td>12198765432</td><td>rafael.ferreira@example.com</td><td>Rua da Lua, 909</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>13</td><td>Juliana Mendes</td><td>13198765432</td><td>juliana.mendes@example.com</td><td>Avenida Atlântica, 1010</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>14</td><td>Thiago Rocha</td><td>14198765432</td><td>thiago.rocha@example.com</td><td>Rua do Mar, 1111</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+      <tr><td>15</td><td>Camila Nunes</td><td>15198765432</td><td>camila.nunes@example.com</td><td>Rua do Sol, 1212</td><td><button class="btn btn-editar">Editar</button> <button class="btn btn-excluir">Excluir</button></td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
