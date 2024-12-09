@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DAD7EA; /* Fundo geral */
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Título */
+  h1 {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #4A4A4A; /* Cor do título */
+  }
+  
+  /* Estilo da tabela */
+  table.clientes {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Une as bordas das células */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fundo branco para a tabela */
+    border: 2px solid #4A4A4A; /* Borda ao redor da tabela */
+  }
+  
+  /* Cabeçalho da tabela */
+  table.clientes thead th {
+    background-color: #007BFF; /* Fundo azul no cabeçalho */
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: 1px solid #4A4A4A; /* Divisórias no cabeçalho */
+  }
+  
+  /* Linhas e células */
+  table.clientes tbody tr {
+    background-color: #f9f9f9; /* Fundo claro para linhas ímpares */
+  }
+  
+  table.clientes tbody tr:nth-child(even) {
+    background-color: #EDEAF6; /* Fundo alternado */
+  }
+  
+  table.clientes th, table.clientes td {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid #4A4A4A; /* Divisórias entre células */
+  }
+  
+  /* Hover nas linhas */
+  table.clientes tbody tr:hover {
+    background-color: #C6C4DD; /* Fundo ao passar o mouse */
+  }
+  
